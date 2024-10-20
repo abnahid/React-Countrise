@@ -1,0 +1,24 @@
+.Country-Container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .flag-container img{
+width: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    .Country-Container {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Country-Container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
